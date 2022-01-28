@@ -2,15 +2,12 @@ pipeline {
     agent any
      tools {nodejs "node"}
     
-    environment {
-        CI = 'true'
-    }
+    
     stages {
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
-
+    stage('Example') {
+      steps {
+        sh 'npm config ls'
+      }
     }
+  }
 }
