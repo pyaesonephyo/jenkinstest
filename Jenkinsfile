@@ -6,7 +6,6 @@ pipeline {
           steps {
              bat 'npm install --global yarn'
              bat 'yarn'
-             bat 'npm install -g firebase-tools'
           }
         }
     }
