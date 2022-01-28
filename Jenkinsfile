@@ -4,9 +4,10 @@ pipeline {
     
     
     stages {
-    stage('Example') {
+    stage('Build') {
       steps {
-        bat 'npm config ls'
+         bat 'npm install --global yarn'
+         bat 'yarn'
       }
     }
   }
