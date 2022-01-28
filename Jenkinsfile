@@ -8,6 +8,7 @@ pipeline {
              bat 'yarn install --network-timeout 1000000'
              bat 'npm install --global yarn'
              bat 'npm install -g firebase-tools'
-          }    
+          }
+        }
     }
 }
